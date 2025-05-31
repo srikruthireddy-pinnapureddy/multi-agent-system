@@ -1,0 +1,41 @@
+
+---
+
+### **2. Sample Input Files (`sample_inputs/`)**
+Create a folder `sample_inputs/` and add example files such as:
+- `sample.json`: A structured JSON file for testing.
+- `sample_email.txt`: A mock email example.
+- `sample_invoice.pdf`: A dummy invoice (if PDF processing is implemented later).
+
+---
+
+### **3. Folder Structure**
+multi_agent_system/
+├── classifier_agent.py
+├── json_agent.py
+├── email_agent.py
+├── memory_module.py
+├── main.py
+├── requirements.txt
+├── README.md
+└── sample_inputs/
+
+---
+
+### **4. Sample Output Logs (`logs/sample_output_log.txt`)**
+Record a few sample outputs from your system:
+```plaintext
+Timestamp: 2025-05-31 20:45:12
+Input Type: JSON
+Extracted Data:
+{
+  "id": 101,
+  "amount": 500,
+  "date": "2025-05-31"
+}
+Processing Result: Successfully parsed JSON.
+
+Timestamp: 2025-05-31 20:45:25
+Input Type: Email
+Extracted Data: Sender: abc@gmail.com, Urgency: High
+Processing Result: RFQ request processed.
